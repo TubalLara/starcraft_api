@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get '/:id' => 'matches#index'
+  get '/matches/:faction' => 'matches#rank_factions'
   resources :matches
   resources :players
   # The priority is based upon order of creation: first created -> highest priority.
