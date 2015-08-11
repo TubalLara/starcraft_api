@@ -1,7 +1,7 @@
 class MatchesController < ApplicationController
 	def index
 		 
-		matches = Match.where(winner_id: params[:id])
+		matches_wins = Match.where(winner_id: params[:id])
 		
 		#matches = Player.joins('INNER JOIN matches ON players.id = matches.winner_id')
 		#matches = Match.joins('INNER JOIN players ON players.id = matches.winner_id')
